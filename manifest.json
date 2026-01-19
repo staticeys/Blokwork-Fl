@@ -1,0 +1,18 @@
+{
+    "name": "Blokwork",
+    "short_name": "Blokwork",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fafafa",
+    "theme_color": "#1976d2",
+    "description": "A privacy-focused, theme-driven note-taking app with markdown support, tagging, and workspace management.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
