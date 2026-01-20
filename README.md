@@ -1,6 +1,6 @@
-# Blokwork Web Edition
+# Blokwork Fl Web Edition
 
-**A privacy-focused, offline-first note-taking app that runs entirely in your browser.**
+**A privacy-focused, offline-first notes app that runs entirely in your browser.**
 
 [Launch App](#) | [Desktop Version](https://github.com/yourusername/blokwork) | [Report Issue](https://github.com/yourusername/blokwork/issues)
 
@@ -8,7 +8,7 @@
 
 ## What is Blokwork?
 
-Blokwork is a modern note-taking application built with Flutter that helps you capture, organize, and manage your thoughts as "blocks" with powerful theming, markdown support, and tagging capabilities.
+Blokwork is a note-taking / text block management app built with Flutter. It helps you capture, organise, and manage blocks of text. It features markdown support, tagging, sorting and export capabilities.
 
 **This web version runs completely in your browser** - no servers, no cloud sync, no data collection. Your notes stay on your device.
 
@@ -17,11 +17,10 @@ Blokwork is a modern note-taking application built with Flutter that helps you c
 ## ✨ Features
 
 ### 📝 Block-Based Note Taking
-- Create unlimited notes as individual "blocks"
-- Full **GitHub Flavored Markdown** support
-- Live preview with syntax highlighting
-- Rich markdown toolbar for quick formatting
-- Copy blocks as rich text for pasting into other apps
+- Create unlimited plain text notes as individual "blocks"
+- Add reference links 
+- Full **GitHub Flavored Markdown**
+- Right click blocks to access the context menu, manage metadata and copy blocks as rich text
 
 ### 🏷️ Organization & Filtering
 - **Tag blocks** with custom colored labels
@@ -35,7 +34,6 @@ Blokwork is a modern note-taking application built with Flutter that helps you c
 - Multiple color scheme presets
 - Customizable accent colors
 - Material Design 3 components
-- System font stack for optimal rendering
 
 ### 💾 Import & Export
 - **Export to JSON** - Full workspace backup
@@ -67,15 +65,14 @@ Blokwork is a modern note-taking application built with Flutter that helps you c
 2. **Create a workspace** - Give it a name (e.g., "Personal Notes")
 3. **Create your first block** - Click the + button to add a note
 4. **Write in markdown** - Use the toolbar or type markdown syntax
-5. **Organize with tags** - Create tags and assign them to blocks
+5. **Organise with tags** - Right click to create tags and assign them to blocks
 
 ### Tips for New Users
 
-- **Markdown basics**: Use `#` for headers, `**bold**`, `*italic*`, `` `code` ``
+- **Markdown basics**: Use `#` for headings, `**bold**`, `*italic*`, `` `code` ``
 - **Quick search**: Start typing in the search bar to filter blocks
 - **Theme switching**: Visit Settings to change between light/dark themes
 - **Backup regularly**: Export your workspace as JSON for safe keeping
-- **Keyboard friendly**: Use Tab to navigate, Enter to confirm dialogs
 
 ---
 
@@ -126,14 +123,7 @@ View the CSP in action: Right-click → Inspect → Console
 | Chrome/Edge | 100+ | ✅ Fully supported |
 | Firefox | 100+ | ✅ Fully supported |
 | Safari | 15+ | ✅ Fully supported |
-| Mobile browsers | Latest | ✅ Touch-optimized |
-
-### Mobile Support
-
-The web version works on mobile browsers but is **optimized for desktop use**. For the best mobile experience, consider:
-- Using landscape orientation on tablets
-- Accessing via desktop browser for intensive work
-- Using the desktop app if available for your platform
+| Mobile browsers | ...not great
 
 ---
 
@@ -151,7 +141,7 @@ The web version works on mobile browsers but is **optimized for desktop use**. F
 ### Performance
 
 - **Initial load**: ~2-5 seconds (depending on connection)
-- **Runtime**: Smooth 60fps UI
+- **Runtime**: Smooth
 - **Memory**: ~50-100MB typical usage
 - **Storage**: ~10KB per workspace + blocks
 
@@ -164,27 +154,6 @@ Once loaded, the app is **fully functional offline**:
 - ✅ Export data (downloads work offline)
 - ❌ Initial page load (requires internet once)
 - ❌ Import files (browser file picker requires connection)
-
----
-
-## 🆚 Web vs Desktop
-
-### Web Version Limitations
-
-The web version does **NOT** support:
-- ❌ File attachments to blocks
-- ❌ Custom file system paths
-- ❌ Window management features
-- ❌ Native OS integrations
-
-### Desktop Version Advantages
-
-If you need file attachments or native features:
-1. Visit the [GitHub repository](https://github.com/yourusername/blokwork)
-2. Download the desktop version for macOS or Windows
-3. Install Flutter and build from source
-
-**Everything else works identically** between web and desktop versions.
 
 ---
 
@@ -216,26 +185,6 @@ If you need file attachments or native features:
 2. **Version control**: Keep previous exports
 3. **Multiple locations**: Store backups in cloud storage (encrypted)
 4. **Test restores**: Periodically verify imports work
-
-### Export Formats
-
-| Format | Best For | Contains |
-|--------|----------|----------|
-| **JSON** | Complete backup, workspace migration | Everything (blocks, tags, settings, metadata) |
-| **CSV** | Spreadsheet analysis, bulk editing | Block content, dates, tags (no formatting) |
-| **Markdown** | Documentation, static site generation | Block content as .md files in ZIP |
-
-### Migrating Data
-
-**From web to desktop:**
-1. Export workspace as JSON
-2. Open desktop version
-3. Import JSON file
-
-**Between browsers:**
-1. Export from browser A
-2. Open app in browser B
-3. Import JSON file
 
 ---
 
