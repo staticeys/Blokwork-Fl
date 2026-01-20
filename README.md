@@ -2,9 +2,7 @@
 
 **A privacy-focused, offline-first notes app that runs entirely in your browser.**
 
-[Launch App](#) | [Desktop Version](https://github.com/yourusername/blokwork) | [Report Issue](https://github.com/yourusername/blokwork/issues)
-
----
+[Launch App](https://staticeys.github.io/Blokwork-Fl/)
 
 ## What is Blokwork?
 
